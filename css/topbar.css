@@ -1,0 +1,160 @@
+/* header
+ *  ================================================================ */
+#header {
+  height: 40px;
+  background: white;
+background-color: #3B5998;
+}
+#home {
+  display: block;
+  width: 200px;
+  height: 40px;
+  text-indent: 45px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  text-indent: -900em;
+  background-color: #3B5998;
+}
+
+
+/* actions */
+#actions {
+  height: 40px;
+  font-size: 13px;
+}
+
+#actions ul.actionCont {
+  float: left;
+list-style-type: none;
+}
+
+  #actions ul.right {
+    float: right;
+ width: 60px;
+ right: 0px;
+list-style-type: none;
+  }
+
+  #actions li.actionItem {
+    float: left;
+    position: relative;
+    margin-right: 1px;
+    padding: 4px;
+  }
+
+  #actions li.actionItem .aiButton,
+  #actions li.actionItem .aiButton span,
+  #actions ul.dropdown li.actionItem a.aiButton {
+    height: 40px;
+  }
+
+  #actions li.actionItem a.aiButton {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    background: #355E95;
+    padding: 0px 10px;
+    margin: 0px;
+  }
+
+
+  #actions li.actionItem a.aiButton span {
+    line-height: 40px;
+    font-size: .85em;
+  }
+
+  #actions li.noIcon a.aiButton span {
+    padding: 0 0 0 6px;
+    margin-right: 0;
+  }
+
+  #actions li.actionItem #mobile.aiButton span {
+    margin-right: 0;
+  }
+
+  #actions li.actionItem a.aiButton span.selected {
+    color: #555;
+    background: #fff;
+  }
+
+
+  #actions ul.dropdown .dropdownCont li {
+    line-height: 26px;
+list-style-type: none; 
+ }
+
+  #actions ul.dropdown .dcWrapper a {
+    color: #4679BD;
+    text-decoration: none;
+  }
+
+  #actions ul.dropdown .dcWrapper a:hover {
+    text-decoration: underline;
+  }
+
+    #actions ul.dropdown .dropdownCont li a {
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+      #actions ul.dropdown .dropdownCont li a span {
+        margin: 0 6px;
+      }
+
+    #actions ul.dropdown .dropdownCont li a:hover {
+      background: #eee;
+    }
+
+  #actions ul.collapsed li.actionItem {
+  }
+
+  #actions ul.dropdown li.actionItem a.aiButton {
+  }
+
+    #actions ul.dropdown li.actionItem a.aiButton span {
+      padding: 0 0 0 6px;
+      margin-right: 0;
+    }
+
+  #actions #toggleSidebarUl {
+    position: absolute;
+    top: 0;
+    left: 165px;
+    margin-left: -40px;
+  }
+
+  #actions #toggleSidebar {
+    border-width: 0px;
+    display: none;
+    outline: none;
+    text-decoration: none;
+    text-shadow: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    background: transparent;
+  }
+
+  #actions #toggleSidebar span {
+    text-indent: -999px;
+    padding: 0 8px;
+    width: 12px;
+  }
+
+  #actions #showjscode {
+    display: none;
+  }
+
+  #actions #collaborate sup {
+    background: rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+    opacity: 0.4;
+    font-size: .7em;
+    padding: 2px 3px;
+    text-transform: uppercase;
+
+  }
+

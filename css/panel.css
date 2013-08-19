@@ -1,0 +1,40 @@
+.panel {
+	width: 30px;
+	height: 10px;
+	font-size: 10px;
+	color: black;
+	padding: 10px;
+	margin: 27px;
+	z-index: 200;
+	display: block;
+	float: right;
+	top: 0px;
+	left: 63.6%;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: fixed;	
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+	
+	#overflow: hidden;
+}
+/* red */
+
+.panel.red {
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background-color: #e8414c;
+	background-color: lightgray;
+	opacity: 0.7;
+}
+.panel.red ul a {
+	background-color: transparent;
+	border: 1px solid #c8222d;
+}
+
+

@@ -1,0 +1,101 @@
+.typeahead-demo {
+  position: absolute;
+  z-index: 10000;
+  width: 176px;
+  left: 270px;
+  top: -5px;
+  display: block;
+  clear: left;
+  margin: 0px auto 0 auto;
+  padding: 8px;
+  text-align: left;
+  background-color: opaque;
+  border: 1px solid transparent;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 8px;
+
+}
+
+.typeahead,
+.tt-hint {
+  width: 150px;
+  height: 8px;
+  padding: 8px 8px;
+  font-size: 12px;
+  line-height: 20px;
+  border: 2px solid #3B5998;
+  -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+  outline: none;
+  z-index: 1200;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-dropdown-menu {
+  width: auto;
+  min-width: 220px;	
+  margin-top: 2px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid #E3E3E3;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+  height: 30px;
+  padding: 0px 10px;
+  margin: 2px 0px;
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: bold;
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+   display: block;
+  border-radius: 4px 4px 0px 0px; 
+  z-index: 3000;
+}
+
+.tt-suggestions .repo-language {
+  float: right;
+  font-style: italic;
+}
+
+.tt-suggestions .repo-name {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.tt-suggestions .repo-description {
+  margin: 0;
+}
+
+.twitter-typeahead .tt-suggestion.tt-is-under-cursor {
+  #color: #03739c;
+  background-color:#3B5998;
+  opacity: 0.8;
+  font-weight: 900; 
+}
+  
+  
+/* narrow screens */
+/* -------------- */
+
+@media all and (max-width: 600px) {
+  .typeahead-demo {
+    display: none;
+  }
+}
