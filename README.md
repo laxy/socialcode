@@ -36,7 +36,7 @@ http://lakshmanswaroop.com/socialcode/
       - file/socialcode/script/**populateDB.py**  : Populates (initializes) mongoDB and adds all the functions to the database. Note that mongodb connection information will need to be filled into the files.
     
   * Move folders to appropriate positions:
-      **<files>* - contains css, js, imgs and scripts - needs to be located on the public directory of the server from where files are served. 
+      **<files>** - contains css, js, imgs and scripts - needs to be located on the public directory of the server from where files are served. 
       **<socialcode>** - Django App (added as an app to an existing Django deployment)
       **<git-master>** - Code repository also placed on the public directory of the server
     
