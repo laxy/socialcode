@@ -1,0 +1,99 @@
+    1 -main: int (int argc, char **argv), </var/www/html/src/git-master/upload-pack.c 791>
+    2 --strcmp: <>
+    3 --strlen: <>
+    4 --encode_85: void (char *buf, const unsigned char *data, int bytes), </var/www/html/src/git-master/base85.c 79>
+    5 ---say: <>
+    6 ---say1: <>
+    7 --printf: <>
+    8 --decode_85: int (char *dst, const char *buffer, int len), </var/www/html/src/git-master/base85.c 40>
+    9 ---prep_base85: void (void), </var/www/html/src/git-master/base85.c 29>
+   10 ----ARRAY_SIZE: <>
+   11 ---say2: <>
+   12 ---error: int (const char *err, ...), </var/www/html/src/git-master/git-compat-util.h 330>
+   13 ----va_start: <>
+   14 ----error_routine: void (*) (const char *err, va_list params), </var/www/html/src/git-master/usage.c 60>
+   15 ----va_end: <>
+   16 ---say1: <>
+   17 ---say: <>
+   18 --read_cache: <>
+   19 --lstat: <>
+   20 --error: 12
+   21 --strerror: <>
+   22 --ce_match_stat: <>
+   23 --usage: void NORETURN (const char *err), </var/www/html/src/git-master/usage.c 88>
+   24 ---usagef: NORETURN void (const char *err, ...), </var/www/html/src/git-master/git-compat-util.h 327>
+   25 ----va_start: <>
+   26 ----usage_routine: NORETURN_PTR void (*) (const char *err, va_list params), </var/www/html/src/git-master/usage.c 58>
+   27 ----va_end: <>
+   28 --OPT_INTEGER: <>
+   29 --OPT_STRING: <>
+   30 --OPT_END: <>
+   31 --parse_options: int (int argc, const char **argv, const char *prefix, const struct option *options, const char *const usagestr[], int flags), </var/www/html/src/git-master/parse-options.c 449>
+   32 ---parse_options_start: void (struct parse_opt_ctx_t ctx, int argc, const char **argv, const char *prefix, const struct option *options, int flags), </var/www/html/src/git-master/parse-options.c 338>
+   33 ----memset: <>
+   34 ----die: NORETURN void (const char *err, ...), </var/www/html/src/git-master/git-compat-util.h 328>
+   35 -----die_is_recursing: int (*) (void), </var/www/html/src/git-master/usage.c 62>
+   36 -----fputs: <>
+   37 -----exit: <>
+   38 -----va_start: <>
+   39 -----die_routine: NORETURN_PTR void (*) (const char *err, va_list params), </var/www/html/src/git-master/usage.c 59>
+   40 -----va_end: <>
+   41 ----parse_options_check: void (const struct option *opts), </var/www/html/src/git-master/parse-options.c 304>
+   42 -----optbug: int (const struct option *opt, const char *reason), </var/www/html/src/git-master/parse-options.c 15>
+   43 ------error: 12
+   44 -----exit: <>
+   45 ---parse_options_step: int (struct parse_opt_ctx_t ctx, const struct option *options, const char *const usagestr[]), </var/www/html/src/git-master/parse-options.c 359>
+   46 ----parse_nodash_opt: int (struct parse_opt_ctx_t p, const char *arg, const struct option *options), </var/www/html/src/git-master/parse-options.c 272>
+   47 -----get_value: int (struct parse_opt_ctx_t p, const struct option *opt, int flags), </var/www/html/src/git-master/parse-options.c 46>
+   48 ------opterror: int (const struct option *opt, const char *reason, int flags), </var/www/html/src/git-master/parse-options.c 593>
+   49 -------error: 12
+   50 ------get_arg: int (struct parse_opt_ctx_t p, const struct option *opt, int flags, const char **arg), </var/www/html/src/git-master/parse-options.c 22>
+   51 -------opterror: 48
+   52 ------fix_filename: void (const char *prefix, const char **file), </var/www/html/src/git-master/parse-options.c 38>
+   53 -------is_absolute_path: inline int (const char *path), </var/www/html/src/git-master/cache.h 756>
+   54 --------is_dir_sep: <>
+   55 --------has_dos_drive_prefix: <>
+   56 -------strcmp: <>
+   57 -------xstrdup: char * (const char *str), </var/www/html/src/git-master/wrapper.c 33>
+   58 --------strdup: <>
+   59 --------try_to_free_routine: void (*) (size_t size), </var/www/html/src/git-master/wrapper.c 10>
+   60 --------strlen: <>
+   61 --------die: 34
+   62 -------prefix_filename: const char * (const char *pfx, int pfx_len, const char *arg), </var/www/html/src/git-master/abspath.c 216>
+   63 --------is_absolute_path: 53
+   64 --------memcpy: <>
+   65 --------strcpy: <>
+   66 -------strlen: <>
+   67 ------strtol: <>
+   68 ------die: 34
+   69 ----parse_options_usage: int (struct parse_opt_ctx_t ctx, const char *const *usagestr, const struct option *opts, int err), </var/www/html/src/git-master/parse-options.c 585>
+   70 -----usage_with_options_internal: int (struct parse_opt_ctx_t ctx, const char *const *usagestr, const struct option *opts, int full, int err), </var/www/html/src/git-master/parse-options.c 495>
+   71 ------fprintf: <>
+   72 ------fprintf_ln: int (FILE *fp, const char *fmt, ...), </var/www/html/src/git-master/strbuf.c 562>
+   73 -------va_start: <>
+   74 -------vfprintf: <>
+   75 -------va_end: <>
+   76 -------putc: <>
+   77 ------putchar: <>
+   78 ------fputc: <>
+   79 ------utf8_fprintf: int (FILE *stream, const char *format, ...), </var/www/html/src/git-master/utf8.c 490>
+   80 -------va_start: <>
+   81 -------strbuf_vaddf: void (struct strbuf sb, const char *fmt, va_list ap), </var/www/html/src/git-master/strbuf.c 255>
+   82 --------strbuf_avail: inline size_t (const struct strbuf *sb), </var/www/html/src/git-master/strbuf.h 27>
+   83 --------strbuf_grow: void (struct strbuf sb, size_t extra), </var/www/html/src/git-master/strbuf.c 66>
+   84 ---------unsigned_add_overflows: <>
+   85 ---------die: 34
+   86 ---------ALLOC_GROW: <>
+   87 --------va_copy: <>
+   88 --------vsnprintf: <>
+   89 --------va_end: <>
+   90 --------die: 34
+   91 --------strbuf_setlen: inline void (struct strbuf sb, size_t len), </var/www/html/src/git-master/strbuf.h 33>
+   92 ---------die: 34
+   93 -------va_end: <>
+   94 -------fputs: <>
+   95 -------utf8_strwidth: int (const char *string), </var/www/html/src/git-master/utf8.c 286>
+   96 --------utf8_strnwidth: int (const char *string, int len, int skip_ansi), </var/www/html/src/git-master/utf8.c 269>
+   97 ---------strlen: <>
+   98 ---------display_mode_esc_sequence_len: size_t (const char *s), </var/www/html/src/git-master/utf8.c 12>
+   99 ----------isdigit: <>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/files/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="/files/socialcode/js/typeahead.js"></script>
+	<script type="text/javascript" src="/files/socialcode/js/typeahead.min.js"></script> 
+	<script src="/files/socialcode/js/javascript-tabs.js" type="text/javascript"></script>
+    	<script type="text/javascript" src="/files/socialcode/js/shCore.js"></script>
+	<script type="text/javascript" src="/files/socialcode/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="/files/socialcode/js/shBrushCpp.js"></script>
+	<script type="text/javascript" src="/files/socialcode/js/CollapsibleLists.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<script type="text/javascript">CollapsibleLists.apply();</script>
+    
+    <link type="text/css" rel="stylesheet" href="/files/socialcode/css/shCoreDefault.css"/>
+	<link href="/files/socialcode/css/generic-notForMcTabs.css" rel="stylesheet" type="text/css" />
+    <link href="/files/socialcode/tabs/mctabs.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/files/socialcode/css/comments.css">
+    <link rel="stylesheet" type="text/css" href="/files/socialcode/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/files/socialcode/css/documents.css">
+    <link rel="stylesheet" type="text/css" href="/files/socialcode/css/topbar.css">
+    <link rel="stylesheet" type="text/css" href="/files/socialcode/css/typeahead.css">
+    <link rel="stylesheet" type="text/css" href="/files/socialcode/css/split.css">
+    <link rel="stylesheet" type="text/css" href="/files/socialcode/css/flow.css">
+	<link rel="stylesheet" type="text/css" href="/files/socialcode/css/panel.css">
+    <link href='http://fonts.googleapis.com/css?family=Prociono|Droid+Sans|Lato|Arvo|PT+Sans|Ubuntu|Josefin+Sans|Della+Respira|Josefin+Slab|Old+Standard+TT|Vollkorn|Open+Sans|Allerta' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+ 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=504480219635937";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div id='header'>
+<div id="actions">
+	<ul class="actionCont collapsed" id="toggleSidebarUl">
+		<li class="actionItem"><a class="aiButton" id="toggleSidebar" title="Toggle sidebar" href="#toggle-sidebar"><span>Hide sidebar</span></a></li>
+  </ul>
+	<ul class="actionCont collapsed">
+		<li class="actionItem">
+			<a class="aiButton" id="run" title="Run (CTRL + Return)" href="http://www.flippedlogic.com/socialcode/home.html"><span class="icon-caret-right"></span>Home</a>
+		</li>
+
+    <li class="actionItem">
+    	<a class="aiButton" id="tidy" title="Re-indent messy code" href="https://github.com/git/git"><span class="icon-broom"></span>Repository</a>
+    </li>
+    <li class="actionItem">
+    	<a class="aiButton" id="jslint" href="http://www.flippedlogic.com/socialcode/about.html"><span class="icon-ok"></span>About</a>
+    </li>
+
+
+<!--     <li class="actionItem">
+    	<a class="aiButton" id="collaborate" title="TowTruck is an Alpha product - please don't rely on it too much." href="#collaborate" data-end-towtruck-html="End TowTruck"><span class="icon-group"></span>Collaborate <sup>Alpha</sup></a>
+    </li> -->
+  </ul>
+
+<h1 id="logo">
+  <a href="http://stackoverflow.com">
+	<img id="image1" src="/files/socialcode/img/smalllogo.gif" alt="Stack Overflow" />
+  </a>
+</h1>
+	
+    	<!-- Auto-complete Search Bar using typeahead.js -->
+  	<div class="typeahead-demo">
+        <input id="search1" class="typeahead" type="text" placeholder="Search Functions">
+	</div>
+	
+	<ul class="actionCont right">
+		<li class="actionItem jobboard"><a class="aiButton" href="http://jobs.jsfiddle.net"><span class="icon-bullhorn"></span>Help</a></li>
+	</ul>
+
+</div>
+
+<nav>
+	<ul>
+		<li id="login">
+			<a id="login-trigger" href="#">
+				Log in <span>&nbsp;&nbsp;&nbsp;▼ </span>
+			</a>
+			<div id="login-content">
+				<form>
+					<fieldset id="inputs">
+						<input id="username" type="name" name="Email" placeholder="Name" required>   
+						<input id="password" type="email" name="Password" placeholder="Email" required>
+					</fieldset>
+					<fieldset id="actions">
+						<input type="button" id="submit" value="Log in">
+						<label><input type="checkbox" checked="checked"> Keep me signed in</label>
+					</fieldset>
+				</form>
+			</div>                     
+		</li>
+	</ul>
+</nav>
+
+
+ 
+  <!-- Dividing Page  -->
+  <div id="wrap1" class="wrap">
+    
+    <!-- Left Subpage -->
+    <div class="fleft">
+
+	 <div id="flow_content">
+      	<ul class="treeView" id="main_flow"> 
+      	</ul>
+      	</div>
+ 
+    
+    </div>
+    
+    
+     <!-- Left Subpage -->
+    <div class="fright1" id="source_code">
+
+    
+    
+    </div>
+    
+    <!-- Right Subpage -->
+    <div class="fright">
+    
+     <!-- Tabs -->
+    <div id="demopage">
+	<div class="container1">
+            <ul id="tabs1" class="mctabs">
+                <li><a href="#view1">Signature</a></li>
+                <li><a href="#view2">Author</a></li>
+                <li><a href="#view3">Bookmarks</a></li>
+            </ul>
+            
+            <div class="panel-container">
+                <div id="view1">
+                    
+                </div>
+                <div id="view2">
+
+                </div>
+                <div id="view3">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="demopage1">
+	<div class="container11">
+            <ul id="tabs11" class="mctabs">
+                <li><a href="#view11">Comments</a></li>
+                <li><a href="#view22">Bug Fixes</a></li>
+                <li><a href="#view33">Documentation</a></li>
+            </ul>
+            
+            <div id="bpanel" class="panel-container">
+                <div id="view11">
+               
+		 <ul>
+    
+    <div id="main_comments_box">
+    
+    <li class="comments_li_main"> 
+    <div class="comments_div_main">
+
+	<textarea></textarea>
+	<input type="submit" id="submit_button" class="submit_comment" value="Submit">
+	</div>
+	</li>
+	
+	<div id="main_comments_display"> 
+    </div>
+    
+    </div>
+    
+   </ul> 
+    
+
+    
+                </div>
+                <div id="view22">
+                    
+			<nav>
+        <ul id="bug-ul">
+                <li id="bug-login">
+                        <a id="bug-trigger" href="#">
+                               <span>+</span> Report Bug Fix
+                        </a>
+                        <div id="bug-content">
+                                <form>
+                                        <fieldset id="bug-input">
+                                                <input id="tagb" type="name" name="Password" placeholder="Bug ID" required>
+                                                <input id="link12" type="name" name="Email" placeholder="Link" required>
+                                        </fieldset>
+                                        <fieldset id="bug-actions">
+                                                <input type="button" id="bug-submit" value="Submit">
+                                        </fieldset>
+                                </form>
+                        </div>
+                </li>
+        </ul>
+</nav>
+<div id="bug-window"></div>
+                </div>
+                <div id="view33">
+                   
+			<nav>
+        <ul id="doc-ul">
+                <li id="doc-login">
+                        <a id="doc-trigger" href="#">
+                               <span>+</span> Tag Document
+                        </a>
+                        <div id="doc-content">
+                                <form>
+                                        <fieldset id="doc-input">
+                                                <input id="tag" type="name" name="Password" placeholder="Document" required>
+                                                <input id="link11" type="name" name="Email" placeholder="Link" required>
+                                        </fieldset>
+                                        <fieldset id="doc-actions">
+                                                <input type="button" id="doc-submit" value="Submit">
+                                        </fieldset>
+                                </form>
+                        </div>
+                </li>
+        </ul>
+</nav>
+<div id="doc-window"></div>
+ 
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+  </div>
+
+  
+<script type="text/javascript" src="/files/socialcode/js/main.js"></script>
+  
+<!--<div id="footer">
+   Copyright (c) 2013 flippedlogic.com All rights reserved
+</div>--> 
+  </body>
+</html>
