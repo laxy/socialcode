@@ -1,4 +1,4 @@
-social code
+Social Code
 ==========
 SocialCode is an integrated toolbase which brings social aspects to coding, development and testing software. Thank you for checking it out. 
 
