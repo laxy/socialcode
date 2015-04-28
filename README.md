@@ -30,6 +30,7 @@ http://lakshmanswaroop.com/socialcode/
 
   * Select the code repository. 
   * Run GNU cflow on the code repo, which generates a call flow for the repository.
+      - Example of cflow command run from workspace root: cflow --format=posix --level-indent='0=-' --level-indent='1=-' --level-indent=start='-' *.c block-sha1/*.c contrib/*.c git-gui/*.c mergetools/*.c ppc/*.c vcs-svn/*.c builtin/*.c xdiff/*.c compat/*.c ewah/*.c > e2cGraph2
   * Run scripts on the call flow output file:
       - files/socialcode/script/**FindAllUniqFuncs.py** : Generates a list of unique functions in the repo and stores it in functions.txt.
       - files/socialcode/script/**GetSigFileLine.py** : Generates a collection of functions and associated data which will the stored in the repository. 
