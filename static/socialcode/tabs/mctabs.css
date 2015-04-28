@@ -21,6 +21,7 @@ ul.mctabs li a
     padding:0 16px; /* edit 16px for different tab width */
     display:inline-block;    
     font:normal 12px Verdana;
+	font-family: ProximaNova, 'Quattrocento Sans', sans-serif;
     line-height:30px;/* height #1 */
     text-decoration: none;
     color:#222;

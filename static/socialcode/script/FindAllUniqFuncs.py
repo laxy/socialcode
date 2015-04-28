@@ -45,4 +45,4 @@ def FindUniqueFuncs ():
 #             ' --level-indent=start=\'-\' cfiles > e2cGraph\nThe output will be'+\
 #       ' written to functions.txt'
 
-#print FindUniqueFuncs()
+FindUniqueFuncs()

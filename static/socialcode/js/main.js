@@ -252,7 +252,7 @@ function update_comments(comments)
             if(comments=="") {
             } else {                
                 var x=document.getElementById("main_comments_display").innerHTML;
-                document.getElementById("main_comments_display").innerHTML='<div class="comments_div"><div class="inline"><img src="img/pic.gif" alt="Smiley face" width="42" height="42"></div><div class="inlinep">'+'<b><i><u>'+comments[i]+'</u></i></b><br><p align="justify">'+comments[i+1]+'</p></div><br class="clearBoth" /></div>'+x;
+                document.getElementById("main_comments_display").innerHTML='<div class="comments_div"><div class="inline"><img src="/socialcode/img/pic.gif" alt="Smiley face" width="42" height="42"></div><div class="inlinep">'+'<b><i><u>'+comments[i]+'</u></i></b><br><p align="justify">'+comments[i+1]+'</p></div><br class="clearBoth" /></div>'+x;
             }
         }
     }

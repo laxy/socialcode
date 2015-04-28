@@ -6,9 +6,11 @@ import string
 import subprocess as sp
 import pdb
 from pymongo import MongoClient
-client = MongoClient('*****.com',*****)
-db = client['*****']
-db.authenticate('*****','*****')
+client = MongoClient('ds051788.mongolab.com',51788)
+db = client['socialcode']
+db.authenticate('socialcode','socialcode')
+#db.create_collection("function_table") 
+
 collection = db.function_table
 
 def populateDBwithFunc():    

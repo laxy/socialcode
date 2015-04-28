@@ -8,9 +8,9 @@ import ast, json
 import subprocess as sp
 from pymongo import MongoClient
 
-client = MongoClient('*****.com',*****)
-db = client['*****']
-db.authenticate('*****','*****')
+client = MongoClient('ds051788.mongolab.com',51788)
+db = client['socialcode']
+db.authenticate('socialcode','socialcode')
 collection = db.function_table
 
 
